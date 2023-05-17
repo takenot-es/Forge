@@ -1,9 +1,9 @@
-$font-family-serif: "Inknut Antiqua", serif;
-$font-family-sans-serif: "IBM Plex Sans", sans-serif;
+$font-family-header: 'Space Grotesk', sans-serif;
+$font-family-body: 'Inter', sans-serif;
 
 $fonts: (
-    "1": #{$font-family-serif},
-    "2": #{$font-family-sans-serif},
+    "1": #{$font-family-header},
+    "2": #{$font-family-body},
 ) !default;
 
 
@@ -23,7 +23,7 @@ $base-font-size:        1rem;
 $base-font-weight:      400;
 $lead-font-size:        null;
 $lead-font-weight:      300;
-$header-font-weight:    300;
+$header-font-weight:    500;
 $header-font-family:    null;
 $header-line-height:    1.2;
 
