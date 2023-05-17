@@ -1,6 +1,7 @@
-$c1:        #161C27;
-$c2:        #89B9C8;
-$c3:        #FF3C00;
+$c1:        #1c212b;
+$c2:        #00ca88;
+$c3:        #3c7d7a;
+$c4:        #f4f4f1;
 $black:        #000;
 $white:        #fff;
 
@@ -10,6 +11,7 @@ $theme-colors: (
     "1": $c1,
     "2": $c2,
     "3": $c3,
+    "4": $c4,
 ) !default;
 
 $theme-color-variants: (

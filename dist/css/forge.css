@@ -14,24 +14,25 @@ html {
 
 /* Colors */
 html {
-  --c-1: #161C27;
-  --c-2: #89B9C8;
-  --c-3: #FF3C00;
-  --c-1-v1: #454952;
-  --c-1-v2: #73777d;
-  --c-1-v3: #a2a4a9;
-  --c-1-v4: #d0d2d4;
-  --c-1-v5: #e8e8e9;
-  --c-2-v1: #a1c7d3;
-  --c-2-v2: #b8d5de;
-  --c-2-v3: #d0e3e9;
-  --c-2-v4: #e7f1f4;
-  --c-2-v5: #f3f8fa;
-  --c-3-v1: #ff6333;
-  --c-3-v2: #ff8a66;
-  --c-3-v3: #ffb199;
-  --c-3-v4: #ffd8cc;
-  --c-3-v5: #ffece6;
+  --c-1: #1c212b;
+  --c-2: #00ca88;
+  --c-3: #3c7d7a;
+  --c-4: #f4f4f1;
+  --c-1-v1: #494d55;
+  --c-1-v2: #777a80;
+  --c-1-v3: #a4a6aa;
+  --c-1-v4: #d2d3d5;
+  --c-1-v5: #e8e9ea;
+  --c-2-v1: #33d5a0;
+  --c-2-v2: #66dfb8;
+  --c-2-v3: #99eacf;
+  --c-2-v4: #ccf4e7;
+  --c-2-v5: #e6faf3;
+  --c-3-v1: #639795;
+  --c-3-v2: #8ab1af;
+  --c-3-v3: #b1cbca;
+  --c-3-v4: #d8e5e4;
+  --c-3-v5: #ecf2f2;
 }
 
 /* Type */
@@ -522,6 +523,10 @@ h6 {
   color: var(--c-3);
 }
 
+[class*=fc-4] {
+  color: var(--c-4);
+}
+
 [class*=fc-1-v1] {
   color: var(--c-1-v1);
 }
@@ -648,6 +653,10 @@ h6 {
 
 [class*=bc-3] {
   background-color: var(--c-3);
+}
+
+[class*=bc-4] {
+  background-color: var(--c-4);
 }
 
 [class*=bc-1-v1] {
