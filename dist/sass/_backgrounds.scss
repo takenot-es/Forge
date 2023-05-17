@@ -3,3 +3,9 @@
         background-color: var(--c-#{$title});
     }
 }
+
+@each $title, $value in $theme-color-variants-map {
+    [class*='bc-#{$title}'] {
+        background-color: var(--c-#{$title});
+    }
+}

@@ -57,6 +57,12 @@ h6 {
     }
 }
 
+@each $title, $value in $theme-color-variants-map {
+    [class*='fc-#{$title}'] {
+        color: var(--c-#{$title});
+    }
+}
+
 @each $title, $value in $fonts {
     [class*='ff-#{$title}'] {
         font-family: var(--ff-#{$title});

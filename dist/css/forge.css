@@ -14,15 +14,24 @@ html {
 
 /* Colors */
 html {
-  --c-1: #042932;
-  --c-2: #264750;
-  --c-3: #6A7F84;
-  --c-4: #9DACA9;
-  --c-5: #DADFE3;
-  --c-6: #F84F5F;
-  --c-7: #5868FB;
-  --c-8: #EEEDFB;
-  --c-9: #FFFFFF;
+  --c-1: #161C27;
+  --c-2: #89B9C8;
+  --c-3: #FF3C00;
+  --c-1-v1: #454952;
+  --c-1-v2: #73777d;
+  --c-1-v3: #a2a4a9;
+  --c-1-v4: #d0d2d4;
+  --c-1-v5: #e8e8e9;
+  --c-2-v1: #a1c7d3;
+  --c-2-v2: #b8d5de;
+  --c-2-v3: #d0e3e9;
+  --c-2-v4: #e7f1f4;
+  --c-2-v5: #f3f8fa;
+  --c-3-v1: #ff6333;
+  --c-3-v2: #ff8a66;
+  --c-3-v3: #ffb199;
+  --c-3-v4: #ffd8cc;
+  --c-3-v5: #ffece6;
 }
 
 /* Type */
@@ -86,7 +95,7 @@ html {
   --br-8: 48px;
   --br-9: 56px;
   --br-10: 64px;
-  --brpill: 50rem;
+  --br-pill: 50rem;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -513,28 +522,64 @@ h6 {
   color: var(--c-3);
 }
 
-[class*=fc-4] {
-  color: var(--c-4);
+[class*=fc-1-v1] {
+  color: var(--c-1-v1);
 }
 
-[class*=fc-5] {
-  color: var(--c-5);
+[class*=fc-1-v2] {
+  color: var(--c-1-v2);
 }
 
-[class*=fc-6] {
-  color: var(--c-6);
+[class*=fc-1-v3] {
+  color: var(--c-1-v3);
 }
 
-[class*=fc-7] {
-  color: var(--c-7);
+[class*=fc-1-v4] {
+  color: var(--c-1-v4);
 }
 
-[class*=fc-8] {
-  color: var(--c-8);
+[class*=fc-1-v5] {
+  color: var(--c-1-v5);
 }
 
-[class*=fc-9] {
-  color: var(--c-9);
+[class*=fc-2-v1] {
+  color: var(--c-2-v1);
+}
+
+[class*=fc-2-v2] {
+  color: var(--c-2-v2);
+}
+
+[class*=fc-2-v3] {
+  color: var(--c-2-v3);
+}
+
+[class*=fc-2-v4] {
+  color: var(--c-2-v4);
+}
+
+[class*=fc-2-v5] {
+  color: var(--c-2-v5);
+}
+
+[class*=fc-3-v1] {
+  color: var(--c-3-v1);
+}
+
+[class*=fc-3-v2] {
+  color: var(--c-3-v2);
+}
+
+[class*=fc-3-v3] {
+  color: var(--c-3-v3);
+}
+
+[class*=fc-3-v4] {
+  color: var(--c-3-v4);
+}
+
+[class*=fc-3-v5] {
+  color: var(--c-3-v5);
 }
 
 [class*=ff-1] {
@@ -605,28 +650,64 @@ h6 {
   background-color: var(--c-3);
 }
 
-[class*=bc-4] {
-  background-color: var(--c-4);
+[class*=bc-1-v1] {
+  background-color: var(--c-1-v1);
 }
 
-[class*=bc-5] {
-  background-color: var(--c-5);
+[class*=bc-1-v2] {
+  background-color: var(--c-1-v2);
 }
 
-[class*=bc-6] {
-  background-color: var(--c-6);
+[class*=bc-1-v3] {
+  background-color: var(--c-1-v3);
 }
 
-[class*=bc-7] {
-  background-color: var(--c-7);
+[class*=bc-1-v4] {
+  background-color: var(--c-1-v4);
 }
 
-[class*=bc-8] {
-  background-color: var(--c-8);
+[class*=bc-1-v5] {
+  background-color: var(--c-1-v5);
 }
 
-[class*=bc-9] {
-  background-color: var(--c-9);
+[class*=bc-2-v1] {
+  background-color: var(--c-2-v1);
+}
+
+[class*=bc-2-v2] {
+  background-color: var(--c-2-v2);
+}
+
+[class*=bc-2-v3] {
+  background-color: var(--c-2-v3);
+}
+
+[class*=bc-2-v4] {
+  background-color: var(--c-2-v4);
+}
+
+[class*=bc-2-v5] {
+  background-color: var(--c-2-v5);
+}
+
+[class*=bc-3-v1] {
+  background-color: var(--c-3-v1);
+}
+
+[class*=bc-3-v2] {
+  background-color: var(--c-3-v2);
+}
+
+[class*=bc-3-v3] {
+  background-color: var(--c-3-v3);
+}
+
+[class*=bc-3-v4] {
+  background-color: var(--c-3-v4);
+}
+
+[class*=bc-3-v5] {
+  background-color: var(--c-3-v5);
 }
 
 /* Padding */
@@ -2029,7 +2110,7 @@ h6 {
 }
 
 [class*=r-pill] {
-  border-radius: var(--brpill);
+  border-radius: var(--br-pill);
 }
 
 /*# sourceMappingURL=forge.css.map */

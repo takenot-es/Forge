@@ -1,25 +1,59 @@
-$c1:        #042932;
-$c2:        #264750;
-$c3:        #6A7F84;
-$c4:        #9DACA9;
-$c5:        #DADFE3;
-$c6:        #F84F5F;
-$c7:        #5868FB;
-$c8:        #EEEDFB;
-$c9:        #FFFFFF;
+$c1:        #161C27;
+$c2:        #89B9C8;
+$c3:        #FF3C00;
 $black:        #000;
 $white:        #fff;
+
+
 
 $theme-colors: (
     "1": $c1,
     "2": $c2,
     "3": $c3,
-    "4": $c4,
-    "5": $c5,
-    "6": $c6,
-    "7": $c7,
-    "8": $c8,
-    "9": $c9,
+) !default;
+
+$theme-color-variants: (
+    '1': 20%,
+    '2': 40%,
+    '3': 60%,
+    '4': 80%,
+    '5': 90%,
+) !default;
+
+$c1-v1: tint($c1, map-get($theme-color-variants, '1'));
+$c1-v2: tint($c1, map-get($theme-color-variants, '2'));
+$c1-v3: tint($c1, map-get($theme-color-variants, '3'));
+$c1-v4: tint($c1, map-get($theme-color-variants, '4'));
+$c1-v5: tint($c1, map-get($theme-color-variants, '5'));
+
+$c2-v1: tint($c2, map-get($theme-color-variants, '1'));
+$c2-v2: tint($c2, map-get($theme-color-variants, '2'));
+$c2-v3: tint($c2, map-get($theme-color-variants, '3'));
+$c2-v4: tint($c2, map-get($theme-color-variants, '4'));
+$c2-v5: tint($c2, map-get($theme-color-variants, '5'));
+
+$c3-v1: tint($c3, map-get($theme-color-variants, '1'));
+$c3-v2: tint($c3, map-get($theme-color-variants, '2'));
+$c3-v3: tint($c3, map-get($theme-color-variants, '3'));
+$c3-v4: tint($c3, map-get($theme-color-variants, '4'));
+$c3-v5: tint($c3, map-get($theme-color-variants, '5'));
+
+$theme-color-variants-map: (
+    "1-v1": $c1-v1,
+    "1-v2": $c1-v2,
+    "1-v3": $c1-v3,
+    "1-v4": $c1-v4,
+    "1-v5": $c1-v5,
+    "2-v1": $c2-v1,
+    "2-v2": $c2-v2,
+    "2-v3": $c2-v3,
+    "2-v4": $c2-v4,
+    "2-v5": $c2-v5,
+    "3-v1": $c3-v1,
+    "3-v2": $c3-v2,
+    "3-v3": $c3-v3,
+    "3-v4": $c3-v4,
+    "3-v5": $c3-v5,
 ) !default;
 
 /* Colors */
@@ -27,4 +61,9 @@ html {
     @each $color, $value in $theme-colors {
         --c-#{$color}: #{$value};
     }
+
+    @each $color, $value in $theme-color-variants-map {
+        --c-#{$color}: #{$value};
+    }
+
 }
