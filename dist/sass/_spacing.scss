@@ -1,0 +1,103 @@
+/* Padding */
+@each $title, $value in $spacers {
+    [class*=py-#{$title}], [class*=pt-#{$title}], [class*=p-#{$title}] {
+        padding-top: var(--sp-#{$title});
+    }
+
+    [class*=py-#{$title}], [class*=pb-#{$title}], [class*=p-#{$title}] {
+        padding-bottom: var(--sp-#{$title});
+    }
+
+    [class*=px-#{$title}], [class*=pl-#{$title}], [class*=p-#{$title}] {
+        padding-left: var(--sp-#{$title});
+    }
+
+    [class*=px-#{$title}], [class*=pr-#{$title}], [class*=p-#{$title}] {
+        padding-right: var(--sp-#{$title});
+    }
+}
+
+/* Margin */
+@each $title, $value in $spacers {
+    [class*=my-#{$title}], [class*=mt-#{$title}], [class*=m-#{$title}] {
+        margin-top: var(--sp-#{$title});
+    }
+
+    [class*=my-#{$title}], [class*=mb-#{$title}], [class*=m-#{$title}] {
+        margin-bottom: var(--sp-#{$title});
+    }
+
+    [class*=mx-#{$title}], [class*=ml-#{$title}], [class*=m-#{$title}] {
+        margin-left: var(--sp-#{$title});
+    }
+
+    [class*=mx-#{$title}], [class*=mr-#{$title}], [class*=m-#{$title}] {
+        margin-right: var(--sp-#{$title});
+    }
+}
+
+
+@each $bp-title, $bp-value in $breakpoints {
+    @media screen and (min-width: $bp-value) {
+        /* Padding #{$bp-title} */
+        @each $title, $value in $spacers {
+            [class*=py-#{$bp-title}-#{$title}], [class*=pt-#{$bp-title}-#{$title}], [class*=p-#{$bp-title}-#{$title}] {
+                padding-top: var(--sp-#{$title});
+            }
+
+            [class*=py-#{$bp-title}-#{$title}], [class*=pb-#{$bp-title}-#{$title}], [class*=p-#{$bp-title}-#{$title}] {
+                padding-bottom: var(--sp-#{$title});
+            }
+
+            [class*=px-#{$bp-title}-#{$title}], [class*=pl-#{$bp-title}-#{$title}], [class*=p-#{$bp-title}-#{$title}] {
+                padding-left: var(--sp-#{$title});
+            }
+
+            [class*=px-#{$bp-title}-#{$title}], [class*=pr-#{$bp-title}-#{$title}], [class*=p-#{$bp-title}-#{$title}] {
+                padding-right: var(--sp-#{$title});
+            }
+        }
+    }
+}
+
+
+@each $bp-title, $bp-value in $breakpoints {
+    @media screen and (min-width: $bp-value) {
+        /* Margin #{$bp-title} */
+        @each $title, $value in $spacers {
+            [class*=my-#{$bp-title}-#{$title}], [class*=mt-#{$bp-title}-#{$title}], [class*=m-#{$bp-title}-#{$title}] {
+                margin-top: var(--sp-#{$title});
+            }
+
+            [class*=my-#{$bp-title}-#{$title}], [class*=mb-#{$bp-title}-#{$title}], [class*=m-#{$bp-title}-#{$title}] {
+                margin-bottom: var(--sp-#{$title});
+            }
+
+            [class*=mx-#{$bp-title}-#{$title}], [class*=ml-#{$bp-title}-#{$title}], [class*=m-#{$bp-title}-#{$title}] {
+                margin-left: var(--sp-#{$title});
+            }
+
+            [class*=mx-#{$bp-title}-#{$title}], [class*=mr-#{$bp-title}-#{$title}], [class*=m-#{$bp-title}-#{$title}] {
+                margin-right: var(--sp-#{$title});
+            }
+        }
+    }
+}
+
+@each $title, $value in $height-viewports { 
+    [class*=vh-#{$title}] {
+        min-height: var(--vh-#{$title});
+    }
+}
+
+@each $bp-title, $bp-value in $breakpoints {
+    @media screen and (min-width: $bp-value) {
+        /* Heights #{$bp-title} */
+        @each $title, $value in $height-viewports { 
+            [class*=vh-#{$bp-title}-#{$title}] {
+                min-height: var(--vh-#{$title});
+            }
+        }
+    }
+}
+

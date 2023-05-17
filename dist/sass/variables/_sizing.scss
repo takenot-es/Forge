@@ -1,0 +1,51 @@
+//Spacers
+$spacer-modifier:   1.250;
+$spacer-1:          .5rem;
+$spacer-2:          $spacer-1 * $spacer-modifier;
+$spacer-3:          math.ceil($spacer-2 * $spacer-modifier);
+$spacer-4:          math.ceil($spacer-3 * $spacer-modifier);
+$spacer-5:          math.ceil($spacer-4 * $spacer-modifier);
+$spacer-6:          math.ceil($spacer-5 * $spacer-modifier);
+$spacer-7:          math.ceil($spacer-6 * $spacer-modifier);
+$spacer-8:          math.ceil($spacer-7 * $spacer-modifier);
+$spacer-9:          math.ceil($spacer-8 * $spacer-modifier);
+$spacer-10:         math.ceil($spacer-9 * $spacer-modifier);
+
+$spacers: (
+    "1": $spacer-1,
+    "2": $spacer-2,
+    "3": $spacer-3,
+    "4": $spacer-4,
+    "5": $spacer-5,
+    "6": $spacer-6,
+    "7": $spacer-7,
+    "8": $spacer-8,
+    "9": $spacer-9,
+    "10":$spacer-10,
+) !default;
+
+
+$height-viewports: (
+    "1": 10vh,
+    "2": 20vh,
+    "3": 30vh,
+    "4": 40vh,
+    "5": 50vh,
+    "6": 60vh,
+    "7": 70vh,
+    "8": 80vh,
+    "9": 90vh,
+    "10":100vh,
+)!default;
+
+$border-radius-pill: 50rem;
+
+/* Spacing and Sizing */
+html {
+    @each $title, $value in $spacers {
+        --sp-#{$title}: #{$value};
+    }
+    @each $title, $value in $height-viewports {
+        --vh-#{$title}: #{$value};
+    }
+}

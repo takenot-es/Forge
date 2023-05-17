@@ -1,0 +1,30 @@
+$c1:        #042932;
+$c2:        #264750;
+$c3:        #6A7F84;
+$c4:        #9DACA9;
+$c5:        #DADFE3;
+$c6:        #F84F5F;
+$c7:        #5868FB;
+$c8:        #EEEDFB;
+$c9:        #FFFFFF;
+$black:        #000;
+$white:        #fff;
+
+$theme-colors: (
+    "1": $c1,
+    "2": $c2,
+    "3": $c3,
+    "4": $c4,
+    "5": $c5,
+    "6": $c6,
+    "7": $c7,
+    "8": $c8,
+    "9": $c9,
+) !default;
+
+/* Colors */
+html {
+    @each $color, $value in $theme-colors {
+        --c-#{$color}: #{$value};
+    }
+}

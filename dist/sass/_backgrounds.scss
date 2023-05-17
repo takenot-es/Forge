@@ -1,0 +1,5 @@
+@each $title, $value in $theme-colors {
+    [class*='bc-#{$title}'] {
+        background-color: var(--c-#{$title});
+    }
+}

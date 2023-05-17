@@ -1,0 +1,25 @@
+@each $title, $value in $border-radius {
+    [class*=r-tl-#{$title}] {
+        border-top-left-radius: var(--br-#{$title});
+    }
+
+    [class*=r-bl-#{$title}] {
+        border-bottom-left-radius: var(--br-#{$title});
+    }
+
+    [class*=r-tr-#{$title}] {
+        border-top-right-radius: var(--br-#{$title});
+    }
+
+    [class*=r-br-#{$title}] {
+        border-bottom-right-radius: var(--br-#{$title});
+    }
+
+    [class*=r-#{$title}] {
+        border-radius: var(--br-#{$title});
+    }
+}
+
+[class*=r-pill] {
+    border-radius: var(--brpill);
+}

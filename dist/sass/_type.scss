@@ -1,0 +1,76 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: var(--ff-2);
+    color: var(--c2);
+    font-size: var(--fs-8);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: var(--fs-8);
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--fw-3);
+    font-family: var(--ff-1);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: $h1-font-size;
+}
+
+h2 {
+    font-size: $h2-font-size;
+}
+
+h3 {
+    font-size: $h3-font-size;
+}
+
+h4 {
+    font-size: $h4-font-size;
+}
+
+h5 {
+    font-size: $h5-font-size;
+}
+
+h6 {
+    font-size: $h6-font-size;
+}
+
+@each $title, $value in $type-sizes {
+    [class*='fs-#{$title}'] {
+        font-size: var(--fs-#{$title});
+    }
+}
+
+@each $title, $value in $theme-colors {
+    [class*='fc-#{$title}'] {
+        color: var(--c-#{$title});
+    }
+}
+
+@each $title, $value in $fonts {
+    [class*='ff-#{$title}'] {
+        font-family: var(--ff-#{$title});
+    }
+}
+
+@each $title, $value in $font-weights {
+    [class*='fw-#{$title}'] {
+        font-weight: var(--fw-#{$title});
+    }
+}
+
+@each $title, $value in $text-transforms {
+    [class*='tt-#{$title}'] {
+        text-transform: $value;
+    }
+}
